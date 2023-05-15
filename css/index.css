@@ -1,0 +1,81 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Outfit', sans-serif;
+    flex-direction: column;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 100%);
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;    
+    width: 38%; 
+    height: 65%; 
+    border-style: none; 
+    padding: 20px; 
+    background-color: hsl(212, 45%, 89%); 
+    border-radius: 20px;
+    margin-top: 50px;
+}
+  
+.image {
+    width: 100%; 
+    border-radius: 7px;
+}
+  
+#textone {
+    text-align: center;
+    margin: 10px;
+    color: hsl(218, 44%, 22%);
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#texttwo{
+    text-align: center;
+    margin: 10px;
+    text-align: center;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+}
+        
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+      width: 80%;
+      height: 90%;
+    }
+    .image {
+      width: 100%;
+    }
+  }
+  
+  /* Estilos para desktop (acima de 1440px) */
+  @media only screen and (min-width: 1440px) {
+    .container {
+      width: 50%;
+      height: 50%;
+    }
+    .image {
+      width: 80%;
+    }
+  }
